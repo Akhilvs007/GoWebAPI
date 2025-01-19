@@ -12,11 +12,9 @@ spec:
       labels:
         app: gowebapi
     spec:
-      imagePullSecrets:
-      - name: akhildocker
       containers:
       - name: gowebapi
-        image: adminturneddevops/gowebapi:latest
+        image: image-registry.openshift-image-registry.svc:5000/openshift-config/go-web-api-git:latest
         ports:
         - containerPort: 8080
 ---
