@@ -12,6 +12,8 @@ spec:
       labels:
         app: gowebapi
     spec:
+      imagePullSecrets:
+      - name: akhildocker
       containers:
       - name: gowebapi
         image: adminturneddevops/gowebapi:latest
